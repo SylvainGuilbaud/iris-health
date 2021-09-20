@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+    irishealth:
+        init: true
+        build: 
+          context: .
+          dockerfile: Dockerfile
+        image: irishealth-demo:2021.1.0.215.0
+        hostname: irishealth
+        container_name: irishealth
+        environment:
+          - ISC_DATA_DIRECTORY=/IRIS
+          # - ISC_CPF_MERGE_FILE=/ISC/iris.conf
+        volumes: 
+        - ./src/:/src
+        - ./volumes/data:/data
+        - ./volumes/IRIS/:/IRIS
+        ports:
+          - 53001:1972
+          - 53002:52773
+        command:
+          # --key /tmp/iris.key
+          -a /src/shell/init.sh
