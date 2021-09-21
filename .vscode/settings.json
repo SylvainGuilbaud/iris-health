@@ -1,6 +1,6 @@
 {
     "objectscript.conn": {
-        "ns": "app",
+        "ns": "interop",
         "active": true,
         "docker-compose": {
             "service": "irishealth",

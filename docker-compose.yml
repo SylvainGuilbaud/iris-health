@@ -5,7 +5,7 @@ services:
         build: 
           context: .
           dockerfile: Dockerfile
-        image: irishealth-demo:2021.1.0.215.0
+        image: irishealth:demo
         hostname: irishealth
         container_name: irishealth
         environment:
@@ -13,11 +13,12 @@ services:
           # - ISC_CPF_MERGE_FILE=/ISC/iris.conf
         volumes: 
         - ./src/:/src
-        - ./volumes/data:/data
+        - ./data:/data
+        - ./volumes/databases:/databases
         - ./volumes/IRIS/:/IRIS
         ports:
-          - 53001:1972
-          - 53002:52773
+          - 51972:1972
+          - 52021:52773
         command:
           # --key /tmp/iris.key
           -a /src/shell/init.sh

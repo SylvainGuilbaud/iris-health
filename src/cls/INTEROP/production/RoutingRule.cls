@@ -1,12 +1,12 @@
 /// 
-Class HL7.prod.production.RoutingRule Extends Ens.Rule.Definition
+Class INTEROP.production.RoutingRule Extends Ens.Rule.Definition
 {
 
 Parameter RuleAssistClass = "EnsLib.HL7.MsgRouter.RuleAssist";
 
 XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 {
-<ruleDefinition alias="" context="EnsLib.HL7.MsgRouter.RoutingEngine" production="HL7.prod.production">
+<ruleDefinition alias="" context="EnsLib.HL7.MsgRouter.RoutingEngine" production="INTEROP.production">
 <ruleSet name="" effectiveBegin="" effectiveEnd="">
 <rule name="">
 <constraint name="source" value="HL7FileService"></constraint>

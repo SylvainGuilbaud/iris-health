@@ -1,12 +1,12 @@
 /// 
-Class HL7.prod.production.AlertRule Extends Ens.Rule.Definition
+Class INTEROP.production.AlertRule Extends Ens.Rule.Definition
 {
 
 Parameter RuleAssistClass = "EnsLib.MsgRouter.RuleAssist";
 
 XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 {
-<ruleDefinition alias="" context="EnsLib.MsgRouter.RoutingEngine" production="HL7.prod.production">
+<ruleDefinition alias="" context="EnsLib.MsgRouter.RoutingEngine" production="INTEROP.production">
 <ruleSet name="" effectiveBegin="" effectiveEnd="">
 <rule name="">
 </rule>
