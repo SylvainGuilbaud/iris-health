@@ -1,4 +1,4 @@
-Class APP.data.patient Extends %Persistent
+Class APP.data.patient Extends (%Persistent, %XML.Adaptor)
 {
 
 Property IPP As %String;

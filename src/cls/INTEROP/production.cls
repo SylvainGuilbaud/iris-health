@@ -32,14 +32,10 @@ XData ProductionDefinition
   <Item Name="JavaGateway" Category="" ClassName="EnsLib.JavaGateway.Service" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
   <Item Name="archivage" Category="" ClassName="INTEROP.operation.archivage" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
-    <Setting Target="Adapter" Name="JGService">JavaGateway</Setting>
-    <Setting Target="Adapter" Name="Credentials">IRIS</Setting>
-    <Setting Target="Adapter" Name="DSN">jdbc:IRIS://127.0.0.1:1972/PATIENT</Setting>
-    <Setting Target="Adapter" Name="JDBCDriver">com.intersystems.jdbc.IRISDriver</Setting>
   </Item>
   <Item Name="database" Category="" ClassName="INTEROP.operation.database" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="Credentials">IRIS</Setting>
-    <Setting Target="Adapter" Name="DSN">jdbc:IRIS://127.0.0.1:1972/PATIENT</Setting>
+    <Setting Target="Adapter" Name="DSN">jdbc:IRIS://127.0.0.1:1972/APP</Setting>
     <Setting Target="Adapter" Name="JDBCDriver">com.intersystems.jdbc.IRISDriver</Setting>
     <Setting Target="Adapter" Name="JGService">JavaGateway</Setting>
   </Item>
