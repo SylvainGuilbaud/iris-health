@@ -1,0 +1,8 @@
+09/22/21-00:15:29:002 (390) 0 [Utility.Event] ISC_DATA_DIRECTORY=/IRIS/
+09/22/21-00:15:29:005 (390) 0 [Utility.Event] Executing /usr/irissys/bin/iris qlist
+09/22/21-00:15:29:023 (390) 0 [Utility.Event] Versions are the same
+09/22/21-00:15:29:026 (390) 0 [Utility.Event] Source /usr/irissys/: 2021.1.0.215.0com
+09/22/21-00:15:29:027 (390) 0 [Utility.Event] Destination /IRIS/: 2021.1.0.215.0com
+09/22/21-00:15:29:029 (390) 0 [Utility.Event] Executing /usr/irissys/bin/iris update IRIS directory=/usr/irissys/ datadir=/IRIS/ versionid=2021.1.0.215.0com
+09/22/21-00:15:29:036 (390) 0 [Utility.Event] Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+09/22/21-00:15:29:115 (390) 0 [Utility.Event] Executing chmod ugo-w /usr/irissys/
