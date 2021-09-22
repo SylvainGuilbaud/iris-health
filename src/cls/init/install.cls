@@ -52,11 +52,18 @@ ClassMethod setup(ByRef pVars, pLogLevel As %Integer = 3, pInstaller As %Install
 ClassMethod init() As %Status
 {
   set sc = $$$OK
+  write ##class(Security.Users).UnExpireUserPasswords("*")
   set sc = ..setup()
+  write ##class(Config.CPF).Activate()
   set $namespace = "APP"
   // Enable analytics for the APP namespace.
   set app = $System.CSP.GetDefaultApp($namespace) _ "/"
   do EnableDeepSee^%SYS.cspServer(app)
+  set interop="INTEROP"
+  set $namespace = interop
+  write ##class(Ens.Config.Credentials).SetCredential("IRIS","_system","SYS",1)
+  write ##class(Ens.Director).SetAutoStart(interop_".production")
+  write ##class(Ens.Director).StartProduction(interop_".production")
   return sc
 }
 
