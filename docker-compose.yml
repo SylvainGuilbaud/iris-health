@@ -14,14 +14,14 @@ services:
         volumes: 
         - ./src/:/src
         - ./data:/data
-        - databases:/databases
-        - IRIS:/IRIS
+        - ./databases:/databases
+        - ./IRIS:/IRIS
         ports:
           - 51972:1972
           - 52021:52773
         command:
           # --key /tmp/iris.key
           -a /src/shell/init.sh
-volumes:
-  databases:
-  IRIS:  
+# volumes:
+#   databases:
+#   IRIS:  
