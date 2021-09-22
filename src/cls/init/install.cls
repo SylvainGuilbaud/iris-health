@@ -14,7 +14,6 @@ XData install [ XMLNamespace = INSTALLER ]
   <Var Name="APPPATH" Dir="${DBDIR}${NAMESPACE}/" />
   <Var Name="RESOURCECODE" Value="%DB_${DBCODE}" /> 
   <Var Name="RESOURCEDATA" Value="%DB_${DBDATA}" /> 
-  <Log Level="3" Text="NAMESPACE = ${NAMESPACE}"/>
 
   <Namespace Name="${NAMESPACE}" Code="${DBCODE}" Data="${DBDATA}" Create="yes" Ensemble="1">
     <Configuration>
@@ -30,7 +29,7 @@ XData install [ XMLNamespace = INSTALLER ]
   <Var Name="APPPATH" Dir="${DBDIR}${NAMESPACE}/" />
   <Var Name="RESOURCECODE" Value="%DB_${DBCODE}" /> 
   <Var Name="RESOURCEDATA" Value="%DB_${DBDATA}" /> 
-  <Log Level="3" Text="NAMESPACE = ${NAMESPACE}"/>
+  
   <Namespace Name="${NAMESPACE}" Code="${DBCODE}" Data="${DBDATA}" Create="yes" Ensemble="1">
     <Configuration>
       <Database Name="${DBCODE}" Dir="${APPPATH}${DBCODE}" Create="yes" Resource="${RESOURCECODE}"/>
